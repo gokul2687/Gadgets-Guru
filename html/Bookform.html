@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="../css/Bookform.css">
+</head>
+<body>
+  
+    <div class="container">
+        <div class="card1">
+            <h1>Book Your Service</h1>
+            <form id="msform">
+                <!-- Progress bar -->
+                <ul id="progressbar">
+                    <li class="active" id="personal">Step 1</li>
+                    <li id="account">Step 2</li>
+                </ul>
+
+                <!-- Step 1 -->
+                <fieldset id="form1" class="checkout">
+                    <div class="form-card">
+                        <div class="mb-3">
+                            <label for="category" class="form-label">Select Category</label>
+                            <span class="error-message" id="error-category"></span>
+                            <select class="form-control" id="category" required>
+                                <option disabled selected value="">Select one</option>
+                                <option value="Laptop">Laptop</option>
+                                <option value="Printer">Printer</option>
+                                <option value="Tablet">Tablet</option>
+                                <option value="iMac">iMac</option>
+                                <option value="Desktop">Desktop</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="brand" class="form-label">Enter Brand</label>
+                            <span class="error-message" id="error-brand"></span>
+                            <input type="text" class="form-control" id="brand" placeholder="Enter brand name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="model" class="form-label">Enter Model</label>
+                            <span class="error-message" id="error-model"></span>
+                            <input type="text" class="form-control" id="model" placeholder="Enter model name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="issue" class="form-label">Describe the Issue</label>
+                            <span class="error-message" id="error-issue"></span>
+                            <input type="text" class="form-control" id="issue" placeholder="Enter issue details" required>
+                        </div>
+                    </div>
+                    <button type="button" class="action-button" onclick="nextStep()">Continue</button>
+                </fieldset>
+
+                <!-- Step 2 -->
+                <fieldset id="form2" class="checkout" style="display: none;">
+                    <div class="form-card">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <span class="error-message" id="error-name"></span>
+                            <input type="text" id="name" class="form-control" placeholder="Enter your name" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone</label>
+                            <span class="error-message" id="error-phone"></span>
+                            <input type="text" id="phone" class="form-control" placeholder="Enter your phone number" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <span class="error-message" id="error-email"></span>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                        </div>
+                    </div>
+                    <button type="button" class="action-button" onclick="submitForm()">Submit</button>
+                </fieldset>
+                
+            </form>
+        </div>
+    </div>
+
+<script src="../javascript/Bookform.js"></script>
+</body>
+</html>
