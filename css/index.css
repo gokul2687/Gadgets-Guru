@@ -1,0 +1,168 @@
+body
+{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* navbar css */
+.custom-toggler.navbar-toggler
+{
+    
+    border-color: white;
+}
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    /* SVG image for the white hamburger lines */
+}
+
+a.nav-link:hover 
+{
+    color: red !important;
+}
+
+
+/* home page css */
+
+#home-page
+{
+    width: 100%;
+    display: flex;
+    align-items: center;  
+    height: 91vh;
+    background-attachment: fixed;
+    background-image: url(../Asserts/black-simple-background-red-computer-headphones-technology-84526-wallhere.com.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: hard-light;
+    overflow-y: hidden; 
+    background-blend-mode: color-dodge;
+    background-position-x: center;
+    background-position-y: center;
+
+}
+#home-text
+{
+    max-width: 800px; /* Restricts the width for better readability */
+    margin: 0 auto; /* Centers the content horizontally */
+    padding: 20px; /* Adds space around the content */
+    
+}
+#home-heading
+{
+    color: white;
+}
+.home-para
+{
+    font-style: italic;
+    padding-top: 10px;
+    font-size: 1rem; /* Base font size for readability */
+    line-height: 1.6; /* Improves line spacing */
+    color: white; /* Dark color for better contrast */
+    margin-bottom: 20px; /* Adds space between paragraphs */
+}
+@media (max-width: 768px) {
+    .home-para {
+        font-size: 0.9rem; /* Adjust font size for smaller screens */
+        line-height: 1.4; /* Adjust line spacing for smaller screens */
+    }
+}
+#home-btn
+{
+
+    /* padding: 10px; */
+    /* width: 150px; */
+    border-radius: 50px;
+    border-color: #CE3545;
+    background-color:#CE3545;
+    color: white;
+    
+}
+#home-btn:hover
+{
+    background-color: rgba(225, 225, 225, 0);
+}
+
+@media (max-width: 768px) {
+    #home-page {
+        height: auto; /* Adjust height for small screens if content overflows */
+    }
+}
+
+
+/* aboutus style */
+
+#aboutimage
+{
+    width: 460px;
+    /* margin-left: 210px; */
+}
+#aboutus
+{
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+}
+.abouthead
+{
+
+    color: #CE3545;
+}
+.mission
+{
+
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    
+}
+/* whatwedo style */
+#whatwedo
+{
+    border: 1px solid black;
+    min-height: 100vh;
+    background-color:black;
+}
+
+.bg-custom-dark {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    
+  }
+/*how we work Style */
+
+#howitwork
+{
+    border: 1px solid black;
+    min-height: 70vh;
+    background-color: black;
+}
+#stepcontent
+{
+    border: 1px solid red;
+    /* display: flex; */
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2) 
+}
+/* contact style */
+#Contactcontent
+{
+    border: 1px solid black;
+    min-height: 100vh;
+    background-color: black;
+}
+   /* Custom Red Border Styling */
+   .form-container input,
+   .form-container textarea {
+     border: 2px solid #b71c1c; /* Red border */
+   }
+
+   .form-container input:focus,
+   .form-container textarea:focus {
+     border-color: #d32f2f; /* Darker red focus border */
+     box-shadow: none; /* Remove focus shadow */
+   }
+
+   .map-container iframe {
+     width: 100%; /* Full width for responsiveness */
+     height: 530px; 
+     border: 0; /* No border */
+   }
+
+/* footer  style*/
+

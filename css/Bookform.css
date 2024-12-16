@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #C20010;
+    margin-bottom: 20px;
+}
+
+.card1 {
+    padding: 20px;
+    border: 2px solid #C20010;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+/* Progress bar */
+#progressbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+#progressbar li {
+    flex: 1;
+    text-align: center;
+    position: relative;
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+#progressbar li:before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    background-color: #666;
+    border: 2px solid #C20010;
+}
+
+#progressbar li.active:before {
+    background-color: #C20010;
+    border-color: #C20010;
+}
+
+#progressbar li.active {
+    color: #C20010;
+}
+
+/* Form styling */
+fieldset {
+    border: none;
+    padding: 0;
+}
+
+.form-card {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+label {
+    font-size: 14px;
+    color: #C20010;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #C20010;
+    border-radius: 5px;
+}
+
+.error-message {
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+.action-button {
+    background-color: #C20010;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+.action-button:hover {
+    background-color: #9b000c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+
+    .action-button {
+        font-size: 14px;
+    }
+}
